@@ -1,20 +1,19 @@
 import React, { Component } from 'react';
-
 import './sign-in.styles.scss';
 
-export class SignIn extends Component {
+
+class SignIn extends Component {
     constructor(props) {
-      super(props)
-    
-      this.state = {
-         email: '',
-         password: ''
-      };
-    };
-    
+        super(props);
+        this.state = {
+            email: '',
+            password: ''
+        }
+    }
+
     handleSubmit = event => {
         event.preventDefault();
-        
+
         this.setState({ email: '', password: '' })
     }
 
